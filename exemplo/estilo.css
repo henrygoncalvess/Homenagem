@@ -99,11 +99,11 @@ a{
     text-decoration: none;
     color: rgb(238, 46, 155);
 }
-.audio{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    margin: 10px 10px;
-    box-shadow: 2px 2px 5px rgb(207, 142, 164);
-    font: var(--normal);
-    font-size: 1.3em;
+audio{
+    width: 100%;
+    box-shadow: 2px 2px 5px rgb(220, 146, 172);
+    border-radius: 26px;
+}
+source{
+    color: black;
 }
