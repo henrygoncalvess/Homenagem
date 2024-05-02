@@ -105,7 +105,7 @@ span{
     text-decoration: none;
     color: rgb(238, 46, 155);
     animation: dance 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 30;
     margin: 0px;
 }
 .audio{
