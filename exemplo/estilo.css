@@ -15,14 +15,12 @@ body{
     background: rgb(252, 131, 131) url(https://static.vecteezy.com/system/resources/previews/016/408/163/non_2x/3d-red-heart-free-png.png) center top repeat fixed;
     background-size: cover;
     background-size: 65px;
-    text-shadow: 1px 1px 2px rgba(38, 0, 0, 0.68);
-    
+    text-shadow: 1px 1px 2px rgba(38, 0, 0, 0.382);
 }
 main{
     max-width: 650px;
     padding: 100px 30px;
     margin: auto;
-
 }
 section{
     max-width: 650px;
@@ -33,13 +31,49 @@ section{
     box-shadow: 2px 2px 5px rgba(102, 0, 0, 0.856);
     background-color: rgb(248, 217, 228);
     padding: 10px;
+    animation: cor 4s 1.5s 1;
+}
+section:focus-within aside .familia{
+    animation: surgir 2s 1; /* 2 foto */
+}
+section:focus-within aside .primeiro{
+    animation: surgir 5s 1; /* 5 audio*/
+}
+section:focus-within aside .dpsaud{
+    animation: surgir 84s 1; /* 84 primeira msg*/
+}
+section:focus-within aside .segundo{
+    animation: surgir 103s 1; /* 103 segunda msg*/
+}
+section:focus-within aside .terceiro{
+    animation: surgir 120s 1; /* 120 msg e pizza*/
+}
+section:focus-within aside .quarto, #quarto{
+    animation: surgir 127s 1; /* 127 mensagem grande*/
+}
+section:focus-within aside .quinto{
+    animation: surgir 152s 1; /* 152 msg*/
+}
+section:focus-within aside .meio{
+    animation: surgir 159s 1; /* 159 foto*/
+}
+section:focus-within aside .sexto{
+    animation: surgir 162s 1; /* 162 msg*/
+}
+section:focus-within aside .setimo{
+    animation: surgir 177s 1; /* 177 foto*/
+}
+section:focus-within aside .fim{
+    animation: surgir 181s 1; /* 181 msg fim*/
 }
 h1{
     font: var(--amor);
-    font-size: 2.1em;
+    font-size: 2.4em;
     text-align: center;
     color: rgb(238, 46, 155);
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.835);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.846);
+    animation: big2 2s;
+    animation-iteration-count: 15;
 }
 h2{
     font: var(--amor);
@@ -112,6 +146,8 @@ span{
     animation: dance 1s;
     animation-iteration-count: infinite;
     margin: 0px;
+    animation: surgir 12s 1; /* 12 */
+
 }
 @keyframes dance{
     0%{
@@ -129,9 +165,41 @@ span{
         transform: scale(1);
     }
     50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes big2{
+    0%{
+        transform: scale(1);
+    }
+    50%{
         transform: scale(1.1);
     }
     100%{
         transform: scale(1);
+    }
+}
+@keyframes cor {
+    0%{
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes surgir {
+    0%{
+        scale: 0;
+    }
+    95%{
+        scale: 0;
+    }
+    100%{
+
     }
 }
